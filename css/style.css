@@ -79,13 +79,15 @@ li{
 
 .nav{
 	position: absolute;
+	margin-top: -4px;
 }
 .nav li{
 	position: relative;
 	display: block;
 	float: left;
-	background: url(../images/back-nav.png) repeat-x;
+	background: #313131;
 	height: 30px;
+    box-shadow: 0px 2px 0px 0px #000;
 } 
 .nav li ul{
 	position: absolute;
@@ -106,18 +108,44 @@ li{
 	background: #303030;
 	display: block;
 	box-shadow: 0px 5px 10px 0px #000;
-
+	border-top: 2px solid black;
 }
 .nav a{
 	color: #ffffff;
 	text-decoration: none;
-	font: 10px Tahoma, Helvetica, sans-serif;
-	width: 142.857px;
+	font: 14px Tahoma, Helvetica, sans-serif;
+	width: 142.87px;
 	display: block;
 	text-align: center;
 	line-height: 30px;
 }
-
+.sidebar{
+	float: left;
+	width: 100%;
+	background: url(../images/main-back.png) repeat-y;
+	margin-top: 28px;
+	line-height: 40px;
+}
+.left,
+.center{
+	float:left;
+	overflow: hidden;
+	position: relative;
+}
+.right{
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+.left,
+.right{
+	width: 170px;
+	padding: 5px 25px 10px 15px;	
+}
+.center{
+	width: 580px;
+	float: left;
+}
 .left h1,
 .right h1{
 	color: #424c43;
@@ -130,32 +158,10 @@ li{
 	font-size: 14px;
 	line-height: 20px;
 }
-.left{
-	width: 25%;
-	background: #edeef0;
-	display: table-cell;
-	padding: 10px 25px 15px 15px;
-}
-.right{
-	display: table-cell;
-	width: 25%;
-	background: #edeef0;
-	padding: 10px 25px 15px 15px;
-}
-.center{
-	display: table-cell;
-	width: 50%;
-	margin: 0 auto;
-	background: #ffffff;
-}
-.content{
-	display: table;
-}
-.baze{
-	display: table-row;
-}
-.baze>p{
-	line-height: 50px;
+.main:after{
+	content: '';
+	clear: both;
+	display: block;
 }
 
 /*=============	================================================
